@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Figuras Geométricas</title>
+</head>
+<body>
+    <script src="./Geometric.js"></script>
+    <header>
+        <h2>Figuras Geométricas</h2>
+        
+    </header>
+    <section>
+        <h2>Calculadora figuras geométricas </h2>
+        <p>
+            Esta es una calculadora de figuras geométricas básicas,
+            ingresa los datos solicitados y te daremos tus resultados.
+        </p>
+        
+        <h3>Cuadrado</h3>
+        
+        <form action="">
+            <label for="ladoCuadrado">Escribe la medida de un
+                 lado del cuadrado en metros</label>
+            <input id="ladoCuadrado" type="number" placeholder="lado">
+            <button type="button" onclick="cPerimetroCuadrado()">
+                Calcular perímetro
+            </button>
+            <button type="button" onclick="cAreaCuadrado()">
+                Calcular área
+            </button>
+        </form>
+       
+        <h3>Triángulo</h3>
+       
+        <form action="">
+            <input id="inputA" type="number" placeholder="altura">
+            <input id="inputL1" type="number" placeholder="lado1">
+            <input id="inputL2" type="number" placeholder="lado2">
+            <input id="inputB" type="number" placeholder="base"> 
+            <button type="button" onclick="cPerimetroTriangulo()">
+                Calcular perímetro
+            </button>
+            <button type="button" onclick="cAreaTriangulo()">
+                Calcular área
+            </button>
+        </form>
+        
+        <h3>Círculo</h3>
+       
+        <form action="">
+            <input id="inputRadio" type="number" placeholder="Radio">
+            <button type="button" onclick="cPerimetroCirculo()">
+                Calcular perímetro
+            </button>
+            <button  type="button" onclick="cAreaCirculo()">
+                Calcular área
+            </button>
+        </form>
+
+    </section>
+        
+</body>
+</html>
