@@ -83,12 +83,14 @@ function perimetroCuadrado (lado)
     {
         const perimetro = lado*4;
         return perimetro;
+        
     }
 
 function areaCuadrado (lado)
     {
 
-        return  `El area del cuadrado es ${lado * lado} cm^2` ;
+        return  `El area del cuadrado es ${lado * lado} ` ;
+        
     }
 
 // Triangulo
@@ -133,7 +135,10 @@ function perimetroCirculo (radio)
         const value = input.value;
         
         const perimetro = perimetroCuadrado(value);
-        alert (perimetro);
+       
+        const resultadoP = document.getElementById("rPCuadrado");
+        resultadoP.innerHTML ="El perímetro es " + perimetro +" m";
+        
     }
 
 
@@ -142,35 +147,43 @@ function perimetroCirculo (radio)
         const value = input.value;
         
         const area = areaCuadrado(value);
-        alert (area);
+       
+
+        const resultadoP = document.getElementById("rACuadrado");
+        resultadoP.innerHTML ="El área es " + area + " m" ;
 
     }
 
     function cPerimetroTriangulo(){
         const lado1 = document.getElementById("inputL1");
-        const value1 = parseInt(lado1.value);
+        const value1 = lado1.value;
 
         const lado2 = document.getElementById("inputL2");
-        const value2 = parseInt(lado2.value);
+        const value2 = lado2.value;
 
         const base = document.getElementById("inputB");
-        const valueb = parseInt(base.value);
+        const valueb = base.value;
 
         
         
         const perimetro = perimetroTriangulo(value1, value2, valueb);
-        alert (perimetro);
+       
+        const resultadoP = document.getElementById("rPerimetroT");
+        resultadoP.innerHTML ="El perímetro es " + perimetro +" m";
+        
     }
 
     function cAreaTriangulo(){
         const base = document.getElementById("inputB");
-        const valueB = parseInt(base.value);
+        const valueB = base.value;
 
         const altura = document.getElementById("inputA");
-        const valueh = parseInt(altura.value);
+        const valueh = altura.value;
         
         const area = areaTriangulo(valueB,valueh);
-        alert (area);
+        
+        const resultadoP = document.getElementById("rAreaT");
+        resultadoP.innerHTML ="El área es " + area +" m^2";
 
     }
 
@@ -179,15 +192,20 @@ function perimetroCirculo (radio)
         const value = input.value;
         
         const perimetro = perimetroCirculo(value);
-        alert (perimetro);
+        
+        const resultadoP = document.getElementById("rPCirculo");
+        resultadoP.innerHTML ="El perímetro es " + perimetro +" m";
     }
 
 
     function cAreaCirculo(){
         const radio = document.getElementById("inputRadio");
-        const valueRadio = parseInt(radio.value);
+        const valueRadio = radio.value;
         
         const area = areaCirculo(valueRadio);
-        alert (area);
        
-    }
+        
+        const resultadoP = document.getElementById("rACirculo");
+        resultadoP.innerHTML ="El área es " + area +" m^2";
+       
+     }
